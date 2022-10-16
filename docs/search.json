@@ -2,36 +2,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "[STUDENT/GROUP NAME] Progress Journal",
+    "title": "Berk Özcan Progress Journal",
     "section": "",
     "text": "This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "assignment1.html",
     "href": "assignment1.html",
     "title": "1  Assignment 1",
     "section": "",
-    "text": "set.seed(1)\nvec1 <- sample(LETTERS,5)\npaste0(vec1,collapse=\"\")\n\n[1] \"YDGAB\""
+    "text": "Berk Özcan, I’ve been working as a Senior Data Analyst in Doğuş Teknoloji for almost 2 years. I have 5 years of experience in Analytical departments, before that, I worked as a merchandise planner in several retail companies. One of my biggest aim is after this program, I want to get a promotion to become Analytics Manager. I work with mostly SQL and Python in my current job. With my new skills I believe that I can handle complex problems, also in this field we always have to get to update our knowledge and I could enhance my understanding of data and analytics through my education.\nMy linkedin profile"
+  },
+  {
+    "objectID": "assignment1.html#user-2022---tutorials--introduction-to-git-and-github-tutorial-",
+    "href": "assignment1.html#user-2022---tutorials--introduction-to-git-and-github-tutorial-",
+    "title": "1  Assignment 1",
+    "section": "1.2 useR! 2022 - Tutorials -Introduction to Git and GitHub Tutorial-",
+    "text": "1.2 useR! 2022 - Tutorials -Introduction to Git and GitHub Tutorial-\nHere is the link\nI preferred to watch an introduction video about Git and GitHub. In this video, we can learn the usage of Git and GitHub, why they are important in our life and some bash codes for administrating the pipeline.\nFirstly we should understand the notion of version control. With version control, we can manage changes to projects over time, and also we can track changes to files.\nThere are several reasons why we are using version control:\n\nCollaboration : Simultaneously work on the same orıject\nTracking : Record the development of a project\nRestoring versions : Restore older versions of a file\nBack-up : Save your work in a remote repository.\n\nWHY GIT:\n-Second generation version control system -Unique approach to tracking changes -Streamlined collaboration -Manages evolution of a project -Fast and lightweight branching -Commit messages provide context -Safe testing and experimentation\nWHY GITHUB\n-Provides cloud storage for our project -Like dropbox but with better features -It allows us to: view and review our work sync with a project *report issues/bugs -contribute to the project -Great way to promote our skills and interests\nSome Git Terms we have to know\nRepository Commit Push/Pull Branch Pull/Merge request Issues\nWith this suggested video also ensures how can we use the tool with bash/shell codes."
+  },
+  {
+    "objectID": "assignment1.html#r-posts-relevant-to-my-interests",
+    "href": "assignment1.html#r-posts-relevant-to-my-interests",
+    "title": "1  Assignment 1",
+    "section": "1.3 R posts relevant to my interests",
+    "text": "1.3 R posts relevant to my interests\n\n1.3.1 Basic Visualization with R\n\n### Histogram\n\ndata(airquality)\n  \nhist(airquality$Temp, main =\"La Guardia Airport's\\\nMaximum Temperature(Daily)\",\n    xlab =\"Temperature(Fahrenheit)\",\n    xlim = c(50, 125), col =\"yellow\",\n    freq = TRUE)\n\n\n\n### Box Plot\n\ndata(airquality)\n  \nboxplot(airquality$Wind, main = \"Average wind speed\\\nat La Guardia Airport\",\n        xlab = \"Miles per hour\", ylab = \"Wind\",\n        col = \"orange\", border = \"brown\",\n        horizontal = TRUE, notch = TRUE)\n\n\n\n### Scatter Plot\n\ndata(airquality)\n  \nplot(airquality$Ozone, airquality$Month,\n     main =\"Scatterplot Example\",\n    xlab =\"Ozone Concentration in parts per billion\",\n    ylab =\" Month of observation \", pch = 19)\n\n\n\n### Heat Map\n\n# Set seed for reproducibility\n# set.seed(110)\n  \n# Create example data\ndata <- matrix(rnorm(50, 0, 5), nrow = 5, ncol = 5)\n\nWarning in matrix(rnorm(50, 0, 5), nrow = 5, ncol = 5): data length differs from\nsize of matrix: [50 != 5 x 5]\n\n# Column names\ncolnames(data) <- paste0(\"col\", 1:5)\nrownames(data) <- paste0(\"row\", 1:5)\n  \n# Draw a heatmap\nheatmap(data)     \n\n\n\n\nreference for the basic visualization with R\n\n\n1.3.2 Logistic Regression in R\nLogistic regression is one of the most popular model for classification problems. In this part i examined how can we use this algorithm in R.\nFor this example, we’ll use the Default dataset from the ISLR package. We can use the following code to load and view a summary of the dataset:\n\noptions(repos=\"https://cran.rstudio.com\" )\ninstall.packages(\"ISLR\")\n\n\nThe downloaded binary packages are in\n    /var/folders/k_/k4ydmc5n4f3f0mxzm8sy4x7c9_8lsp/T//RtmpWAEjQT/downloaded_packages\n\nlibrary(\"ISLR\")\n\ndata <- ISLR::Default\n\nsummary(data)\n\n default    student       balance           income     \n No :9667   No :7056   Min.   :   0.0   Min.   :  772  \n Yes: 333   Yes:2944   1st Qu.: 481.7   1st Qu.:21340  \n                       Median : 823.6   Median :34553  \n                       Mean   : 835.4   Mean   :33517  \n                       3rd Qu.:1166.3   3rd Qu.:43808  \n                       Max.   :2654.3   Max.   :73554  \n\n\nNext, we’ll split the dataset into a training set to train the model on and a testing set to test the model on.\n\n#make this example reproducible\nset.seed(1)\n\n#Use 70% of dataset as training set and remaining 30% as testing set\nsample <- sample(c(TRUE, FALSE), nrow(data), replace=TRUE, prob=c(0.7,0.3))\ntrain <- data[sample, ]\ntest <- data[!sample, ]   \n\nNext, we’ll use the glm (general linear model) function and specify family=“binomial” so that R fits a logistic regression model to the dataset:\n\n#fit logistic regression model\n\nmodel <- glm(default~student+balance+income, family=\"binomial\", data=train)\n\n#disable scientific notation for model summary\noptions(scipen=999)\n\n#view model summary\nsummary(model)\n\n\nCall:\nglm(formula = default ~ student + balance + income, family = \"binomial\", \n    data = train)\n\nDeviance Residuals: \n    Min       1Q   Median       3Q      Max  \n-2.5586  -0.1353  -0.0519  -0.0177   3.7973  \n\nCoefficients:\n                 Estimate    Std. Error z value            Pr(>|z|)    \n(Intercept) -11.478101194   0.623409555 -18.412 <0.0000000000000002 ***\nstudentYes   -0.493292438   0.285735949  -1.726              0.0843 .  \nbalance       0.005988059   0.000293765  20.384 <0.0000000000000002 ***\nincome        0.000007857   0.000009965   0.788              0.4304    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 2021.1  on 6963  degrees of freedom\nResidual deviance: 1065.4  on 6960  degrees of freedom\nAIC: 1073.4\n\nNumber of Fisher Scoring iterations: 8\n\nglm(formula = default ~ student + balance + income, family = \"binomial\", \n    data = train)\n\n\nCall:  glm(formula = default ~ student + balance + income, family = \"binomial\", \n    data = train)\n\nCoefficients:\n  (Intercept)     studentYes        balance         income  \n-11.478101194   -0.493292438    0.005988059    0.000007857  \n\nDegrees of Freedom: 6963 Total (i.e. Null);  6960 Residual\nNull Deviance:      2021 \nResidual Deviance: 1065     AIC: 1073\n\n\nThe coefficients in the output indicate the average change in log odds of defaulting. For example, a one unit increase in balance is associated with an average increase of 0.005988 in the log odds of defaulting.\nThe p-values in the output also give us an idea of how effective each predictor variable is at predicting the probability of default:\nP-value of student status: 0.0843\nP-value of balance: <0.0000\nP-value of income: 0.4304\nUse the Model to Make Predictions:\n\n#define two individuals\nnew <- data.frame(balance = 1400, income = 2000, student = c(\"Yes\", \"No\"))\n\n#predict probability of defaulting\npredict(model, new, type=\"response\")\n\n         1          2 \n0.02732106 0.04397747 \n\n\nreference for the logistic regression with R\n\n\n1.3.3 LAG & LEAD R Functions\nFirstly we have to install and load dplyr package:\n\ninstall.packages(\"dplyr\")       \n\n\nThe downloaded binary packages are in\n    /var/folders/k_/k4ydmc5n4f3f0mxzm8sy4x7c9_8lsp/T//RtmpWAEjQT/downloaded_packages\n\nlibrary(\"dplyr\")     \n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\nAnd giving an example vector as x :\n\nx<- 1:10\n\nHere is the basic application for lag and lead\n\n##Lead :\n\nlead(x)\n\n [1]  2  3  4  5  6  7  8  9 10 NA\n\n##Lag :\n\nlag(x)\n\n [1] NA  1  2  3  4  5  6  7  8  9\n\n\nreference for the lag and lead functions"
   }
 ]
