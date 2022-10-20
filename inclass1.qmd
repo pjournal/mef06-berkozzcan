@@ -1,0 +1,55 @@
+---
+title: "Inclass Exercise-1"
+author: "Berk Özcan"
+date: today
+toc: true
+toc-location: left
+number-sections: true
+format: 
+  html:
+    number-sections: True
+  
+editor: visual
+---
+
+
+After installation step we have to call the packages :
+
+```{r,message=FALSE}
+library(tidyverse)
+library(nycflights13)
+```
+
+First, we take a look at the data to see how many columns and rows we have, as well as what types of data we have :
+
+```{r,message=FALSE}
+glimpse(planes)
+```
+
+In "plane" dataset we have information about each plane's construction. 
+
+### Number of plane counts by the seat for AIRBUS
+
+```{r,message=FALSE}
+#| warning: false
+planes %>% 
+  filter(manufacturer == "AIRBUS INDUSTRIE") %>% 
+  group_by(seats) %>% 
+  summarise(count_of_planes = n()) %>% 
+  arrange(desc(count_of_planes))
+```
+
+### For each manufacturer oldest, newest plane model and counts
+
+```{r,message=FALSE}
+#| warning: false
+planes %>% 
+  group_by(manufacturer) %>% 
+  summarise(min_model_year = min(year, na.rm = T), max_model_year = max(year, na.rm = T),distinct_plane_counts =n_distinct(tailnum)) %>% 
+  arrange(manufacturer)  %>%
+  print(n = Inf) 
+
+```
+
+
+---
