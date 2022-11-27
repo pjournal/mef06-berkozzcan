@@ -9,6 +9,7 @@ book:
     - index.qmd
     - assignment1.qmd
     - inclass1.qmd
+    - Shiny_Foreign_Stu.qmd
   page-footer: 
     center: "[MEF BDA 503](https://mef-bda503.github.io)" 
   sharing: [twitter, facebook]

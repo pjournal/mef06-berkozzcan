@@ -1,0 +1,20 @@
+---
+title: "Shiny_Foreign_Students"
+author: "Berk Özcan"
+editor: visual
+date: "2022-11-27"
+---
+
+### Shiny Assignment
+
+We've been given a dataset about foreign students who are in Turkey. After some data cleaning and analysis processes I've prepared a Shiny app.
+
+It consists of two separates tabs: "The distribution of top N foreign students by their nations" and "Foreign Student's Distribution by Province"
+
+### shinyapps.io
+
+<https://mef06-berkozzcan.shinyapps.io/shiny_assignment/>
+
+### Command for local running
+
+shiny::runGitHub("/pjournal/mef06-berkozzcan.github.io",subdir="/mef06-berkozzcan/Shiny_Assignment/")
