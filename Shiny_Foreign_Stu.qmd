@@ -17,4 +17,6 @@ It consists of two separates tabs: "The distribution of top N foreign students b
 
 ### Command for local running
 
-shiny::runGitHub("/pjournal/mef06-berkozzcan.github.io",subdir="/mef06-berkozzcan/Shiny_Assignment/")
+```{r, eval = FALSE}
+shiny::runGitHub(repo = "pjournal/mef06-berkozzcan",subdir="/Shiny_Assignment")
+```
