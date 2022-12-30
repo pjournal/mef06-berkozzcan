@@ -1,0 +1,21 @@
+---
+title: "OR Case Study"
+editor: visual
+date: "2022-12-30"
+---
+
+### Toyota: Production Planning Optimization
+
+[Here is the chosen case study.](https://www.gurobi.com/case_studies/toyota-production-planning-optimization/)
+
+## Business Case
+
+An automaker brand Toyota aims to produce highly profitable models and ensure that these models comply with environmental regulations. To achieve this, Toyota spent an immense amount of time and effort, the managers used excel and they ran manually multiple simulations.
+
+## Problem
+
+Toyota needs to determine automatically and in a short amount of time the right product mix to maximize the profitability while the brand is ensuring environmental compliance.
+
+## Solution
+
+For solving this problem Toyota decided to use mathematical optimization to find out optimal product mix. The brand evaluated several mathematical optimization solvers and after that they chose Gurobi Optimizer. ( Gurobi calls themselves "the fastest solver on the market today" ) The Gurobi Optimizer is used to perform simulations thus the environmental regulations in each country and region are taken into account. After simulations are made the result feed into Toyota's Profit Planning Module and finally they can run additional simulations to calculate projected profit for the next fiscal year.

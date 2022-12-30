@@ -189,7 +189,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, frame hidden, interior hidden, boxrule=0pt, sharp corners, enhanced, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, breakable, sharp corners, frame hidden, interior hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -411,7 +411,7 @@ We can use the following code to load and view a summary of the dataset:
 \begin{verbatim}
 
 The downloaded binary packages are in
-    /var/folders/z6/nz1bbvyn06z34736vzgsqm_40000gn/T//RtmpeW3s0K/downloaded_packages
+    /var/folders/z6/nz1bbvyn06z34736vzgsqm_40000gn/T//Rtmpi64zr6/downloaded_packages
 \end{verbatim}
 
 \begin{Shaded}
@@ -563,7 +563,7 @@ Firstly we have to install and load dplyr package:
 \begin{verbatim}
 
 The downloaded binary packages are in
-    /var/folders/z6/nz1bbvyn06z34736vzgsqm_40000gn/T//RtmpeW3s0K/downloaded_packages
+    /var/folders/z6/nz1bbvyn06z34736vzgsqm_40000gn/T//Rtmpi64zr6/downloaded_packages
 \end{verbatim}
 
 \begin{Shaded}
@@ -774,6 +774,41 @@ Province''
 \end{Highlighting}
 \end{Shaded}
 
+\bookmarksetup{startatroot}
+
+\hypertarget{or-case-study}{%
+\chapter{OR Case Study}\label{or-case-study}}
+
+\href{https://www.gurobi.com/case_studies/toyota-production-planning-optimization/}{Here
+is the chosen case study.}
+
+\hypertarget{business-case}{%
+\section{Business Case}\label{business-case}}
+
+An automaker brand Toyota aims to produce highly profitable models and
+ensure that these models comply with environmental regulations. To
+achieve this, Toyota spent an immense amount of time and effort, the
+managers used excel and they ran manually multiple simulations.
+
+\hypertarget{problem}{%
+\section{Problem}\label{problem}}
+
+Toyota needs to determine automatically and in a short amount of time
+the right product mix to maximize the profitability while the brand is
+ensuring environmental compliance.
+
+\hypertarget{solution}{%
+\section{Solution}\label{solution}}
+
+For solving this problem Toyota decided to use mathematical optimization
+to find out optimal product mix. The brand evaluated several
+mathematical optimization solvers and after that they chose Gurobi
+Optimizer. ( Gurobi calls themselves ``the fastest solver on the market
+today'' ) The Gurobi Optimizer is used to perform simulations thus the
+environmental regulations in each country and region are taken into
+account. After simulations are made the result feed into Toyota's Profit
+Planning Module and finally they can run additional simulations to
+calculate projected profit for the next fiscal year.
 
 
 
